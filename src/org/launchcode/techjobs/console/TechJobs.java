@@ -62,30 +62,10 @@ public class TechJobs {
                 String searchTerm = in.nextLine();
 
                 if (searchField.equals("all")) {
-
-//                    System.out.println("Damn - you tryna search all?!");
-//                   printJobs(JobData.findByColumnAndValue(searchField, searchTerm));
-//                    printJobs(JobData.findByColumnAndValue("location", "Saint Louis"));
-//                    printJobs(JobData.findByValue("location", "Saint Louis"));
-//                    for (int i = 0; i <10; i++) {
-//                        printJobs(JobData.findByValue(searchField,searchTerm));
                         printJobs(JobData.findByValue(searchTerm));
-//                        printJobs(JobData.findByValue("location", "Saint Louis"));
-//                        printJobs(JobData.findByValue(column(i), "Saint Louis"));
-//                        System.out.println("WOOOWOWWWWW THAT'S A LOT");
-//                    }
                 }
 
-//                if (searchTerm.equals("cancun")) {
-//                    System.out.println("Sorry, no jobs in Cancun");
-//                }
-
-
-//                if (searchField.equals("developer")){
-//                    System.out.println(JobData.findByColumnAndValue("name","developer"));
-//                }
                 else {
-//                    printJobs(JobData.findByColumnAndValue(searchField, searchTerm));
                     printJobs(JobData.findByColumnAndValue(searchField, searchTerm));
                 }
             }
@@ -135,24 +115,6 @@ public class TechJobs {
         return choiceKeys[choiceIdx];
     }
 
-    // Print a list of jobs
-//    private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
-//        if (___.size() == 0) {
-//            System.out.println("no results");
-//                return;
-//        }
-////        System.out.println("printJobs is not implemented yet");
-//        for (HashMap<String, String> job : someJobs) {
-//            String jobInfo = "\n*******\n";
-//            for (Map.___<___, ___> ___: ___.entrySet()) {
-//                jobInfo += (___.getKey() + ": " + ___.getValue() + "\n");
-//            }
-//
-//            jobInfo += "\n*******\n";
-//
-//            System.out.printIn(jobInfo);
-//        }
-//    }
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         if (someJobs.size() == 0) {
             System.out.println("Sorry, no results");
